@@ -2,7 +2,6 @@
   "name": "minimal-react-parcel",
   "version": "1.0.0",
   "description": "A minimal React Parcel environment",
-  "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
