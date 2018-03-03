@@ -1,12 +1,16 @@
 import React from "react";
 import { render } from "react-dom";
+import { Provider } from "react-redux";
 import store from "./store";
+import App from "./components/App";
 import { addArticle } from "./actions";
 
 window.store = store;
 window.addArticle = addArticle;
 
-const App = () => <h1>Setting up React with Parcel bundler</h1>;
-const wrapper = document.getElementById("app");
-
-wrapper ? render(<App />, wrapper) : false;
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("app")
+);
