@@ -9,7 +9,7 @@ asdfasdfasdf
 ## Development
 
 ```bash
-npm i && npm start
+yarn && yarn start
 ```
 
 ## Meta
