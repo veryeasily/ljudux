@@ -1,0 +1,20 @@
+{
+  "ecmaVersion": 8,
+  "libs": [
+    "browser",
+    "ecmascript",
+    "react"
+  ],
+
+  "plugins": {
+    "es_modules": {}
+  },
+
+  "loadEagerly": [
+    "./src/js/*.js"
+  ],
+
+  "dontLoad": [
+    "**/node_modules/!(react*|redux)/**/*.js"
+  ]
+}
